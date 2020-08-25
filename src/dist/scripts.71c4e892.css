@@ -106,7 +106,7 @@ a.logo {
 
 .nav-search {
   border: none;
-  background-image: url(/search.035ae107.svg);
+  background-image: url(/efdbece602104464219d06a8035ae107.svg);
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: contain;
@@ -209,7 +209,9 @@ a.logo {
       width: 140px;
       height: 105px;
       border-radius: 8px;
-      display: block; }
+      display: block;
+      -o-object-fit: cover;
+         object-fit: cover; }
     .mega-nav-box .mega-description {
       font-size: 13px;
       line-height: 18px;
