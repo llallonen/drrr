@@ -36,14 +36,11 @@ a {
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 30px;
   width: 100%;
   background: #fff;
   z-index: 9996;
   color: #6e6d7a;
   position: fixed;
-  will-change: transform;
-  top: 0;
   height: 80px;
 }
 
@@ -61,8 +58,10 @@ a {
 }
 
 .nav {
+  display: flex;
   height: inherit;
   overflow: visible;
+  align-items: center;
 
   .links-container {
     display: none;
@@ -70,12 +69,12 @@ a {
 }
 
 .chevron {
-  float: right;
   width: 6px;
   height: 6px;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
-  transform: rotate(45deg) translateX(6px);
+  margin-left: 9px;
+  transform: rotate(45deg) translateX(-2px);
 }
 
 a.burger {
@@ -165,11 +164,15 @@ a.logo {
     flex-grow: 1;
     .links-container {
       display: flex;
+      height: inherit;
+      align-items: center;
       li.dropdown-item {
+        display: flex;
+        height: inherit;
+        align-items: center;
         padding-right: 27px;
         font-size: 14px;
         font-weight: 600;
-        align-items: center;
       }
     }
   }
