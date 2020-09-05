@@ -8220,6 +8220,24 @@ require("babel-polyfill");
 require("../styles/index.scss");
 
 require("./app");
+
+// Polyfills
+// Styles
+// App
+// Burger
+var burger = document.querySelector("#burger");
+var mobileNav = document.querySelector("#mobile-nav");
+burger.addEventListener("click", function () {
+  mobileNav.classList.toggle("is-open");
+  burger.classList.toggle("is-open");
+});
+var mobileNavContainer = document.querySelector('.mobile-nav-main');
+mobileNavContainer.addEventListener('click', function (e) {
+  if (!e.target.classList.contains('toggle-mobile-nav-dropdown')) return;
+  var target = e.target;
+  console.log(target);
+  target.classList.toggle('open');
+});
 },{"babel-polyfill":"../node_modules/babel-polyfill/lib/index.js","../styles/index.scss":"assets/styles/index.scss","./app":"assets/scripts/app.js"}],"../../../.nvm/versions/node/v12.18.3/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -8248,7 +8266,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40671" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37467" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
