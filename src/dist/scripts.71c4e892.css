@@ -86,6 +86,9 @@ a.burger {
     width: 20px;
     height: 20px; }
 
+.close {
+  display: none; }
+
 .nav-icon {
   height: 18px;
   width: 18px;
@@ -235,6 +238,8 @@ a.logo {
       .nav-extras ul li {
         padding: 7px 0; }
   .mobile-nav {
+    display: none; }
+  .nav-icon {
     display: none; } }
 
 @media (max-width: 919px) {
@@ -266,8 +271,6 @@ a.logo {
     display: none; }
   .toggle-mobile-nav-dropdown.open + .mobile-dropdown-nav {
     display: block; }
-  .close {
-    display: none; }
   .is-open .close {
     display: block;
     font-size: 30px; }

@@ -88,6 +88,10 @@ a.burger {
   }
 }
 
+.close {
+  display: none;
+}
+
 .nav-icon {
   height: 18px;
   width: 18px;
@@ -256,6 +260,10 @@ a.logo {
   .mobile-nav {
     display: none;
   }
+
+  .nav-icon {
+    display: none;
+  }
 }
 
 @media (max-width: 919px) {
@@ -298,9 +306,6 @@ a.logo {
 
   .toggle-mobile-nav-dropdown.open + .mobile-dropdown-nav {
     display: block;
-  }
-  .close {
-    display: none;
   }
 
   .is-open {
