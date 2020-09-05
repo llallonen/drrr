@@ -142,6 +142,7 @@ input:hover[type="search"] {
   color: #9e9ea7;
   top: 22px;
   left: 30px;
+  fill-rule: evenodd;
 }
 //desktop-search
 
@@ -151,6 +152,7 @@ input:hover[type="search"] {
     position: absolute;
     top: 12px;
     right: 4px;
+    fill-rule: evenodd;
   }
 }
 .nav-search {
@@ -318,7 +320,6 @@ input:hover[type="search"] {
     color: #9e9ea7;
     position: relative;
     top: 4px;
-    fill-rule: evenodd;
   }
 
   .mobile-nav-search {
