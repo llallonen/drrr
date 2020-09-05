@@ -693,9 +693,9 @@ var global = arguments[3];
 var e=arguments[3];if(require("core-js/shim"),require("regenerator-runtime/runtime"),require("core-js/fn/regexp/escape"),e._babelPolyfill)throw new Error("only one instance of babel-polyfill is allowed");e._babelPolyfill=!0;var r="defineProperty";function i(e,i,n){e[i]||Object[r](e,i,{writable:!0,configurable:!0,value:n})}i(String.prototype,"padLeft","".padStart),i(String.prototype,"padRight","".padEnd),"pop,reverse,shift,keys,values,entries,indexOf,every,some,forEach,map,filter,find,findIndex,includes,join,slice,concat,push,splice,unshift,sort,lastIndexOf,reduce,reduceRight,copyWithin,fill".split(",").forEach(function(e){[][e]&&i(Array,e,Function.call.bind([][e]))});
 },{"core-js/shim":"w2bQ","regenerator-runtime/runtime":"QVnC","core-js/fn/regexp/escape":"aLB7"}],"FmjA":[function(require,module,exports) {
 
-},{"/home/runner/work/drrr/drrr/src/assets/images/search.svg":[["search.57f5cfa6.svg","vs5g"],"vs5g"]}],"NmDP":[function(require,module,exports) {
+},{}],"NmDP":[function(require,module,exports) {
 function e(e,n,r,t,o,u,i){try{var c=e[u](i),a=c.value}catch(s){return void r(s)}c.done?n(a):Promise.resolve(a).then(t,o)}function n(n){return function(){var r=this,t=arguments;return new Promise(function(o,u){var i=n.apply(r,t);function c(n){e(i,o,u,c,a,"next",n)}function a(n){e(i,o,u,c,a,"throw",n)}c(void 0)})}}n(regeneratorRuntime.mark(function e(){return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,new Promise(function(e){return setTimeout(e,500)});case 2:console.log("Hello World");case 3:case"end":return e.stop()}},e)}))();
 },{}],"dgpK":[function(require,module,exports) {
 "use strict";require("babel-polyfill"),require("../styles/index.scss"),require("./app");var e=document.querySelector("#burger"),t=document.querySelector("#mobile-nav");e.addEventListener("click",function(){t.classList.toggle("is-open"),e.classList.toggle("is-open")});var o=document.querySelector(".mobile-nav-main");o.addEventListener("click",function(e){if(e.target.classList.contains("toggle-mobile-nav-dropdown")){var t=e.target;console.log(t),t.classList.toggle("open")}});
 },{"babel-polyfill":"wllv","../styles/index.scss":"FmjA","./app":"NmDP"}]},{},["dgpK"], null)
-//# sourceMappingURL=scripts.ff88c70c.js.map
+//# sourceMappingURL=scripts.b29fb5bf.js.map
