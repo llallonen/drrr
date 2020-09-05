@@ -92,14 +92,6 @@ a.burger {
   display: none;
 }
 
-.nav-icon {
-  height: 18px;
-  width: 18px;
-  color: #9e9ea7;
-  position: relative;
-  top: 4px;
-}
-
 .fill-current {
   fill: currentColor;
 }
@@ -116,20 +108,61 @@ a.logo {
   height: 60px;
   fill: #333;
 }
+input[type="text"],
+input[type="number"],
+input[type="search"] {
+  height: 40px;
+  padding: 10px 16px;
+  outline: none;
+  border-radius: 8px;
+}
+
+input:hover[type="text"],
+input:hover[type="number"],
+input:hover[type="search"] {
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 4px rgba(234, 76, 137, 0.1);
+}
+
+//mobile-search
+.mobile-nav .nav-search-text {
+  padding-left: 30px;
+  background-color: #f3f3f4;
+  border: none;
+  width: calc(100% - 48px);
+}
+
+.nav-search-wrapper {
+  width: 100%;
+}
+
+.nav-search-wrapper .nav-search-icon {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  color: #9e9ea7;
+  top: 22px;
+  left: 30px;
+}
+//desktop-search
+
+.desktop-search {
+  position: relative;
+  .nav-search-icon {
+    position: absolute;
+    top: 12px;
+    right: 4px;
+  }
+}
+.nav-search {
+  border: none;
+}
+
 //auth-group
 .auth-group {
   .auth-group-item:not(:nth-child(2)) {
     display: none;
   }
-}
-
-.nav-search {
-  border: none;
-  background-image: url(/assets/images/search.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-  background-size: contain;
-  opacity: 0.7;
 }
 
 .btn {
@@ -188,6 +221,7 @@ a.logo {
 
   .auth-group {
     display: flex;
+    align-items: center;
     .auth-group-item:not(:nth-child(2)) {
       display: block;
       padding-left: 5px;
@@ -260,10 +294,6 @@ a.logo {
   .mobile-nav {
     display: none;
   }
-
-  .nav-icon {
-    display: none;
-  }
 }
 
 @media (max-width: 919px) {
@@ -277,8 +307,18 @@ a.logo {
     top: 80px;
     left: 0;
     width: 100%;
-    padding: 18px;
-    outline: 1px solid black;
+  }
+  .nav-icon {
+    display: block;
+    height: 18px;
+    width: 18px;
+    color: #9e9ea7;
+    position: relative;
+    top: 4px;
+  }
+
+  .mobile-nav-search {
+    margin: 10px 24px 10px;
   }
 
   .mobile-nav-main > li > a {
@@ -308,6 +348,17 @@ a.logo {
     display: block;
   }
 
+  .caret-down {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .toggle-mobile-nav-dropdown.open {
+    .caret-down {
+      transform: rotate(180deg);
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+
   .is-open {
     .close {
       display: block;
@@ -316,10 +367,5 @@ a.logo {
     .nav-icon {
       display: none;
     }
-  }
-
-  a.toggle-nav .close {
-    display: none;
-    font-size: 30px;
   }
 }
